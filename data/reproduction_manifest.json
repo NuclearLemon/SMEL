@@ -1,0 +1,125 @@
+{
+  "format_version": 1,
+  "segmentation_backend": "historical_python_ers_v1",
+  "guide_description": "Fixed uint8 first-PC image derived from the historical HSI without ground-truth labels. It is not a superpixel map, prediction or model weight.",
+  "guide_generation_seed": 0,
+  "ers_lambda": 0.5,
+  "ers_sigma": 5.0,
+  "datasets": {
+    "PaviaUniversity": {
+      "cube_sha256": "274a1f8b5084769063ddcfb45a1fde2e8b7752814a04920e15bca5e727a991f5",
+      "gt_sha256": "83adaf8317e09c5323b3ee3934c6377ffe292beb1764896bf8fb76ab666fba03",
+      "cube_shape": [
+        610,
+        340,
+        103
+      ],
+      "data_files": [
+        {
+          "name": "dataset.npz.gz.part000",
+          "sha256": "708448f13bd01958f443b3ba6f6abdb9a82118a2558fb362f5a6309c684db2ad",
+          "bytes": 34499540
+        }
+      ],
+      "guide_file": "segmentation_guide.npz",
+      "guide_sha256": "5f6ceba29555671f4e3e87ef361f50981f10e9720db155fa8964c9d2925c77f8",
+      "guide_archive_sha256": "ac134421e596f4ba1af6a84829e27da66afba7d0ad6694c73910e0f094f28938",
+      "default_segments": 1000,
+      "default_segmentation_sha256": "cc9eb8ec47ca5a1ac1b43e5c477bfc6e0c36eeaf31947473022841e1d85fa177"
+    },
+    "Botswana": {
+      "cube_sha256": "33a91b491f28b90dfb9732b1149029d8b6b37180ba10a0b153980e7b57665139",
+      "gt_sha256": "6557ab5f5005175f83f8c69ceaeb9873858f58b0f49a59ef9f0b4174da98956f",
+      "cube_shape": [
+        1476,
+        256,
+        145
+      ],
+      "data_files": [
+        {
+          "name": "dataset.npz.gz.part000",
+          "sha256": "27a94c3c186dae0d0d324b61d46d539c89df19f1c37416c851324f2a288ee3bf",
+          "bytes": 74301801
+        }
+      ],
+      "guide_file": "segmentation_guide.npz",
+      "guide_sha256": "f4dec6c5ad7d0b516f5e0b886b6b09de95ca5b997b2d487131878e5cdfbd38e6",
+      "guide_archive_sha256": "2d40b74efb0aa4233c7737de7b88363c87b9f0247464fdb4e3c505517c2af08a",
+      "default_segments": 1500,
+      "default_segmentation_sha256": "21fad32fb7d1b3b3012fecc711b11bb2c69ccad0af0091d4824937e733fcd825"
+    },
+    "Trento": {
+      "cube_sha256": "ba9d8546ae0695379e4ed434b5714cb0ff55944facafe0304cc9a4dabd4ea4ee",
+      "gt_sha256": "8756d32dc1b08a104d85bd9f1e608cdf1a4d5210d45c1a7ce8e82235fe0bd8c8",
+      "cube_shape": [
+        166,
+        600,
+        63
+      ],
+      "data_files": [
+        {
+          "name": "dataset.npz.gz.part000",
+          "sha256": "aa0da10c88507806bec95538f10d75d455a7ed1091956896d08c7eb0baabe1fb",
+          "bytes": 9112279
+        }
+      ],
+      "guide_file": "segmentation_guide.npz",
+      "guide_sha256": "9a3ab0ca157e355ec73002e41f333020ffff4f82a7a7fd716be57a74f82223ba",
+      "guide_archive_sha256": "f4ee54b83a43b67550aec605040684ff5ab6d6ce580c5b35cdf7b3a5272d78f0",
+      "default_segments": 350,
+      "default_segmentation_sha256": "c7606f2494951cbd02860c487a78444ff0604c7c40bbf3fec0f1f8137c778d60"
+    },
+    "PaviaCenter": {
+      "cube_sha256": "9045986e7ac830f9e97b6c870619e3cf570a84763e56d2eef5a7ead4957c98b6",
+      "gt_sha256": "3ba53798d40f97d2291436502691d0a12e673a583ba10b64a5b32dad684a2a58",
+      "cube_shape": [
+        1096,
+        715,
+        102
+      ],
+      "data_files": [
+        {
+          "name": "dataset.npz.gz.part000",
+          "sha256": "73df3d0786d8fdcdc4ab269571211b4a23c68b99ad782e349a15190be4650463",
+          "bytes": 78643200
+        },
+        {
+          "name": "dataset.npz.gz.part001",
+          "sha256": "f315f29a81975b0aa8d569dc55d7cba2b8fc2b232fc276aa0799d17b7790d3ae",
+          "bytes": 51344497
+        }
+      ],
+      "guide_file": "segmentation_guide.npz",
+      "guide_sha256": "9aec8f80159d413d3914fb71cdafc3b746894e93388e4b3ce2debb4865f8e223",
+      "guide_archive_sha256": "2e9f1fcbaf2b18da8aac005c1d7aadf3f6a1ef35d63754ccc5e2523bd94fb519",
+      "default_segments": 3000,
+      "default_segmentation_sha256": "28e1226cd4cb59856800bdb6bfaeb7ae7cd47e23ed3db72343fd6b5fa62fd687"
+    },
+    "LongKou": {
+      "cube_sha256": "c3c4d9034e1509b5a62d1934be20b0d8dbfc8754e3740e91b3e5a7a8b0b9bae4",
+      "gt_sha256": "2f4997662c35ff4d0216a63bd4ffe2ee6dceb72ba6e6bc46c49a540c0ba2722a",
+      "cube_shape": [
+        550,
+        400,
+        270
+      ],
+      "data_files": [
+        {
+          "name": "dataset.npz.gz.part000",
+          "sha256": "80ce2f6879674031333220d48b9822a389566d057c01ead318c5aa4983a585b9",
+          "bytes": 78643200
+        },
+        {
+          "name": "dataset.npz.gz.part001",
+          "sha256": "e1f91e83f1c5c913883523d3df9341a1e33010efe44c4fd68665bae2d5f2fd85",
+          "bytes": 7846987
+        }
+      ],
+      "guide_file": "segmentation_guide.npz",
+      "guide_sha256": "6445aec439bde03d6b022e10c95575c90fdffc4702e286ad5851e0fd6345bc6b",
+      "guide_archive_sha256": "fc6aae1624e8c54106f06e896863c6e2269e8561eed625b4c953a7d18ef2ee00",
+      "default_segments": 400,
+      "default_segmentation_sha256": "d582ffd7f00b98064b402dd4c58cea8b14b320d9074c441721a0009e14f231b3"
+    }
+  }
+}

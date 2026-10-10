@@ -1,0 +1,41 @@
+{
+  "datasets": ["PaviaUniversity", "Botswana", "Trento", "PaviaCenter", "LongKou"],
+  "seeds": [0, 1, 2, 3, 4],
+  "data_root": "data",
+  "out_dir": "results",
+  "cache_dir": "cache",
+  "training": {
+    "warmup_epochs": 50,
+    "main_epochs": 100,
+    "train_samples": 16000,
+    "batch_size": 1024,
+    "eval_batch_size": 8192,
+    "eval_every": 20,
+    "basis_samples": 20000,
+    "pca_dim": 20,
+    "rank": 12,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "grad_clip": 5.0
+  },
+  "loss": {
+    "warmup_view_ce_weight": 1.0,
+    "anchor_weight": 0.2,
+    "regional_weight": 0.5
+  },
+  "evidence": {
+    "coarse_groups": 8,
+    "fine_groups": 16
+  },
+  "spatial_refinement": {
+    "lambda": 35.0,
+    "iterations": 10
+  },
+  "dataset_params": {
+    "PaviaUniversity": {"sp_seg": 1000, "rank": 6, "teacher_seed": 2},
+    "Botswana": {"sp_seg": 1500, "rank": 20, "teacher_seed": 3},
+    "Trento": {"sp_seg": 350, "rank": 12, "teacher_seed": 1},
+    "PaviaCenter": {"sp_seg": 3000, "rank": 20, "teacher_seed": 1},
+    "LongKou": {"sp_seg": 400, "rank": 16, "teacher_seed": 2}
+  }
+}
